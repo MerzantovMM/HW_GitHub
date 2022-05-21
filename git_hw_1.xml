@@ -1,0 +1,82 @@
+GIT Homework 1_ xml_Merzantov_MM
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ // Recent Repositories - Create a new repository - xml - Add a README file - create repository
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ // Copy - Http - (ctrl + v)
+    git clone 
+ 23. Внутри локального XML создать файл “new.xml”.
+ //  touch new.xml
+ 24. Добавить файл под гит.
+ // git add new.xml
+
+ 25. Закоммитить файл.
+ // git commit -m "add new xml file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+ // git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ //vim new.xml
+   <xml>
+       <Full name> Ivanov Ivan Ivanovich </Full>
+       <Age>34</Age>
+       <Animals>2</Animals>
+       <Salary>5000$</Salary>
+       :wq
+       
+ 28. Отправить изменения на внешний репозиторий.
+ //     git add new.xml
+       git commit -m "add text xml format"
+       git push
+ 29. Создать файл preferences.xml
+ // touch preferenses.xml
+       
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ // vim preferenses.txt
+    insert
+    <Xml>
+        <Films>Bloody sport </Films>
+        <Serials>Game of Thrones</Serials>
+        <Food>Ice Cream </Food>
+        <Season>Summer</Season>
+        <Country>Russia</Country>
+        
+        Esc + :wq
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ //     touch skills.xml
+        vim skills.xml
+        insert
+        <Xml>
+            <Skills1>1</Skills1>
+            <Skills2>2</Skills2>
+            <Skills3>3</Skills3>
+            <Skills4>4</Skills4>
+        Esc + :wq
+
+ 32. Сделать коммит в одну строку.
+ // git commit -am "add 2 new xml files"
+ 
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+ // git add preferenses.xml skills.xml
+    git commit -m "add 2 new xml files"
+   git push
+            
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ // add mew file - create new file - bug_report.xml
+            
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ // Commit new file
+            
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML
+            
+ // Click on the bug_report.txt - Edit file - modify bug_report.xml
+            
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ //Commit changes
+            
+ 38. Синхронизировать внешний и локальный репозиторий XML
+ // git pull
+ 
+ 

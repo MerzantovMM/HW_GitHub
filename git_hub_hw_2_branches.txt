@@ -1,0 +1,103 @@
+GitHub. HW_2_branches_Merzantov
+
+
+
+1. На локальном репозитории сделать ветки для:
+- (Postman)   
+    // - git branch Postman
+    
+- (Jmeter) 
+    // - git branch Jmeter
+    
+- (CheckLists)
+    // - git branch CheckLists
+    
+- (Bag Reports) 
+    // - git branch Bag Reports
+    
+- (SQL) 
+    // - git branch SQL 
+    
+- (Charles) 
+    // - git branch Charles
+    
+- (Mobile testing) 
+    // - git branch Mobile testing 
+
+
+//
+
+
+2. Запушить все ветки на внешний репозиторий
+    // git push -u origin Postman SQL Charles CheckLists Jmeter Mobile_Testing bag_Reports
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+    // git checkout bag_Reports
+    // touch  bag_Reports.txt
+    // vim  bag_Reports.txt
+       -insert
+                        
+                        bug report attributes
+                        
+       1) Create a bug - "Создать Баг"
+       2) Project - "Выбрать проект"
+       3) Issue type - "Выбираем BUG"
+       4) Summary - "Название Бага который отвечает на вопросы Что не так? Где не так? и Как не так? "
+       5) Description - " Описываем шаги по воспроизведению , фактический и ожидаемый результат"
+            - STR (Step to Reproduce) - " Шаги по воспроизведению - расписываем все что приведет в дальнейшем к воспроизведению нашего дефекта"
+       6) Actual Result - " Фактический результат после прохождения теста"
+       7) Expected Result - " Ожидаемый резкльтат после прохождения теста"
+       8) Severity and Priority - " Это серьезность бага, а так же приоритетность исправления бага"
+       
+                Esc + :wq
+4. Запушить структуру багрепорта на внешний репозиторий
+    // git add bag_Reports.txt
+    // git commit -m "Add bug Reports structure"
+    // git push
+    
+5. Вмержить ветку Bag Reports в Main
+    // git ckeckout main
+    // git merge bag_Reports
+
+6. Запушить main на внешний репозиторий.
+    // git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+
+    // git git ckeckout CheckLists
+    // touch checklist.txt
+    // vim checklist.txt
+    
+        insert
+    
+                Checklist Structure
+                
+        1) Build - "Версия нашей сборки"
+        2) Environment - "Окружение на котором проводилась тестирование"
+        3) Test date - " Дата тестирования"
+        4) Tester - " Тестировщик который проводил данное тестирование"
+        5) Type test - " Тип тестов"
+        6) Name of Checks - "Название самих проверок"
+        7) Result of testing - " Результат нашего тестирвания, прошла или нет"
+        
+            Esc + :wq
+
+8. Запушить структуру на внешний репозиторий
+    // git add checklist.txt
+    // git commit - m "add checklist structure"
+    // git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+    // In general branches click on checklists branch
+    // choose a checklist
+    // select a pool request
+    // create new pool request
+    // Able to merge - compare: Checklist , base: main
+    // create pull request
+    // merge pull request
+    // Pull request successfully merged and closed
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+
+    // git checkout main
+    // git pull
